@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E3DFDF"
-    tools:context=".SignUpActivity">
+    tools:context=".SignInActivity">
 
     <LinearLayout
-        android:id="@+id/layout_sign_up_container"
+        android:id="@+id/layout_sign_in_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/iv_app_icon_sign_up"
+            android:id="@+id/iv_app_icon_sign_in"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginBottom="20dp"
@@ -31,29 +31,19 @@
             tools:srcCompat="@drawable/ic_whatsapp" />
 
         <EditText
-            android:id="@+id/et_sign_up_username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@color/white"
-            android:ems="10"
-            android:hint="Username"
-            android:padding="9dp" />
-
-        <EditText
-            android:id="@+id/et_sign_up_email"
+            android:id="@+id/etv_email_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@color/white"
             android:ems="10"
-            android:hint="Email"
+            android:hint="Email / Phone"
             android:inputType="textEmailAddress"
             android:padding="9dp" />
 
         <EditText
-            android:id="@+id/et_sign_up_password"
+            android:id="@+id/et_sign_in_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -68,15 +58,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:text="Already have an Account ?" />
+            android:text="don't have an Account ?" />
 
         <Button
-            android:id="@+id/btn_sign_up"
+            android:id="@+id/btn_sign_in"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:text="Sign Up"
+            android:text="Sign In"
             app:backgroundTint="#216524"
             app:cornerRadius="5dp" />
 
@@ -86,7 +76,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_google_sign_up"
+                android:id="@+id/btn_google_sign_in"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="5dp"
@@ -99,7 +89,7 @@
                 app:cornerRadius="5dp" />
 
             <Button
-                android:id="@+id/btn_facebook_sign_up"
+                android:id="@+id/btn_facebook_sign_in"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
@@ -113,13 +103,6 @@
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tv_sign_up_with_phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="4dp"
-            android:text="Sign Up with Phone ?" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
